@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout tools:context=".MovieDetailsActivity" android:layout_height="match_parent"
+    android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:viewBindingIgnore="true">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/avengers"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="center"
+        android:id="@+id/imageView_details"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_details"
+        android:background="@drawable/shadow_back"
+        android:orientation="vertical" android:padding="6dp">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textView_title_details"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_details"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:textColor="#E5F1F0"
+        android:textSize="30sp"
+        android:text="TextView"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <RatingBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/ratingBar_details"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title_details"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textView_desc_details"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar_details"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textColor="#E5F1F0" android:textSize="16sp"
+            android:text="TextView"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"/>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
