@@ -62,7 +62,7 @@ public class MovieListActivity extends AppCompatActivity implements OnMovieClick
         movieListViewModel = new ViewModelProvider(this).get(MovieListViewModel.class);
 
         //Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(binding.toolbar);
+       // setSupportActionBar(binding.toolbar);
         
         setUpSearchView();
 
